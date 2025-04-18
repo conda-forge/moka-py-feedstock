@@ -1,5 +1,5 @@
 {% set name = "moka-py" %}
-{% set version = "0.1.16" %}
+{% set version = "0.1.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/moka_py-{{ version }}.tar.gz
-  sha256: 038b4aa7fdeaafba80d7aacff0fa637ffa42626efc19aed1bf13915ad1cf4a04
+  sha256: 2b3d1679c8c6a91214b07fa336566d8c93873c9555da333c523442c987d42799
 
 build:
   skip: true  # [py<39]
