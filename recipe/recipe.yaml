@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: moka-py
-  version: "0.2.4"
+  version: "0.3.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/moka_py-${{ version }}.tar.gz
-  sha256: dcae69788e1692e2d2e2a08d06641d5af744c9d096d13d6aa2a1b93c838827a2
+  sha256: 9b27c88e21e989e4b3f07fc60d42a26d33cef79948dd7255a92a43f55ab5567b
 
 build:
-  number: 1
+  number: 0
   skip: match(python, "<3.9")
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
