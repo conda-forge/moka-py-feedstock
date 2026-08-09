@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: moka-py
-  version: "0.3.0"
+  version: "0.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/moka_py-${{ version }}.tar.gz
-  sha256: 9b27c88e21e989e4b3f07fc60d42a26d33cef79948dd7255a92a43f55ab5567b
+  sha256: 2689db778e6f90c4e76e561b201070e450cae773a10c3e11b1e2a225c319c39e
 
 build:
   number: 0
